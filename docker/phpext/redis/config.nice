@@ -1,0 +1,11 @@
+#! /bin/sh
+#
+# Created by configure
+
+CFLAGS='-fstack-protector-strong -fpic -fpie -O2' \
+CPPFLAGS='-fstack-protector-strong -fpic -fpie -O2' \
+LDFLAGS='-Wl,-O1 -Wl,--hash-style=both -pie' \
+'./configure' \
+'--build=x86_64-linux-musl' \
+'build_alias=x86_64-linux-musl' \
+"$@"
